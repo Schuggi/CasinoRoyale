@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="639.0" prefWidth="1144.0" style="-fx-background-color: #2A2E37;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casinoroyale.controller.HomescreenController">
+   <children>
+      <ImageView fitHeight="639.0" fitWidth="1168.0" layoutX="-2.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/casinobackground.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="84.0" text="Royale Casino" textFill="WHITE">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="159.0" text="Welcome to Royale Casino." textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="614.0" layoutY="11.0" prefHeight="617.0" prefWidth="7.0" style="-fx-background-color: white;" />
+      <Label layoutX="51.0" layoutY="140.0" prefHeight="457.0" prefWidth="519.0" text="Be part of our large player community and enjoy popular online casino games, from &#10;Blackjack, Baccara, Roulette, Bingo and Yatzy to the best live casino and table &#10;games. You can play all our casino games quick, easy and safe directly on your &#10;desktop.&#10;&#10;Enter the Live Casino Lobby and play the classic casino games like live Roulette, live &#10;Blackjack and more, in the company of the best dealers, in a new and improved &#10;environment. &#10;&#10;Casino Royale is all about fun, entertainment and rewarding adventures. We’re &#10;working hard so that you will be able to just sit back, relax and enjoy your amazing &#10;casino journey.&#10;&#10;Gambling can be addictive, please play responsibly.&#10;&#10;" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="698.0" layoutY="112.0" prefHeight="55.0" prefWidth="367.0" style="-fx-background-color: #77aaff;">
+         <children>
+            <Label layoutX="129.0" layoutY="10.0" text="Buy Chips" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="698.0" layoutY="190.0" prefHeight="348.0" prefWidth="367.0" style="-fx-background-color: #77aaff;" stylesheets="@../styles/Style.css">
+         <children>
+            <JFXTextField fx:id="txtPayment" focusColor="#2a2e37" layoutX="106.0" layoutY="104.0" onDragDetected="#updateTextField" onKeyPressed="#updateTextField" onKeyReleased="#updateTextField" onKeyTyped="#updateTextField" prefHeight="36.0" prefWidth="176.0" promptText="Your Payment" unFocusColor="WHITE" />
+            <Button fx:id="btnBuy" defaultButton="true" layoutX="142.0" layoutY="246.0" mnemonicParsing="false" onAction="#btnBuy" prefHeight="12.0" prefWidth="84.0" style="-fx-border-radius: 12; -fx-background-color: #99ccff;" text="Buy it" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="56.0" fitWidth="58.0" layoutX="111.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" rotate="-59.0">
+               <image>
+                  <Image url="@../Images/ChipTop.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="180.0" layoutY="27.0" text="= 1$" textFill="WHITE">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="106.0" layoutY="185.0" prefHeight="1.0" prefWidth="176.0" style="-fx-background-color: white;" />
+            <Label fx:id="lblChips" layoutX="106.0" layoutY="155.0" text="Your Chips" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnNotBuy" alignment="CENTER" defaultButton="true" layoutX="91.0" layoutY="290.0" mnemonicParsing="false" onAction="#btnNotBuy" prefHeight="31.0" prefWidth="194.0" style="-fx-border-radius: 12; -fx-background-color: #99ccff;" text="Continue without buying" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="btnLogout" fitHeight="48.0" fitWidth="42.0" layoutX="30.0" layoutY="579.0" onMouseClicked="#btnLogout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/LogoutHome.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="23.0" layoutX="1009.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="69.0" layoutX="1009.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" rotate="-57.1">
+         <image>
+            <Image url="@../Images/ChipTop.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblActiveUser" layoutX="1039.0" layoutY="24.0" text="User Name" textFill="WHITE" />
+      <Label layoutX="1039.0" layoutY="55.0" text="Chips:" textFill="WHITE" />
+      <Label fx:id="lblChipss" layoutX="1078.0" layoutY="55.0" text="225" textFill="WHITE" />
+   </children>
+</AnchorPane>

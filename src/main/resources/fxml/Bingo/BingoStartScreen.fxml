@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="639.0" prefWidth="1127.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casinoroyale.controller.BingoStartScreenController">
+   <children>
+      <ImageView fitHeight="710.0" fitWidth="1127.0" layoutY="2.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/BingoBackground.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="486.0" layoutY="3.0" text="Bingo" textFill="WHITE">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="143.0" text="Label" />
+      <Button id="buttonStartGame" fx:id="btnStartGame" layoutX="442.0" layoutY="319.0" mnemonicParsing="false" onAction="#btnStartGame" prefHeight="57.0" prefWidth="242.0" stylesheets="@../../styles/StyleBingo.css" text="Start Game" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="257.0" layoutY="144.0" text="Play Bingo against other players, win against them and win the amounts of the other players." textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="429.0" layoutY="165.0" text="Bingo is one of the most popular games." textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button id="buttonStartGame" fx:id="btnBack" layoutX="22.0" layoutY="558.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="50.0" prefWidth="126.0" stylesheets="@../../styles/StyleBingo.css" text="Back" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casinoroyale.controller.RouletteStartScreenController">
+   <children>
+      <ImageView fx:id="ImageViewHintergrund" fitHeight="600.0" fitWidth="900.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/StartHintergrund.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTitel" layoutX="322.0" layoutY="37.0" text="Roulette" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="70.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblText" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="148.0" prefHeight="188.0" prefWidth="871.0" text="Roulette is the royal class game in a Casino. You can place your bets on the Gameboard. When&#10;your are finished a small white Ball will be thrown in the spinnig Roulette Wheel. If you are lucky&#10;enough the ball will land on your number and get up to 35 times the amount you put in.  &#10;However if you don't feel as lucky today you can always bet on multiple numbers at a time.&#10;But you have to consider your payout will shrink." textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button fx:id="btnBack1" layoutX="25.0" layoutY="538.0" mnemonicParsing="false" onAction="#HandleButtonActionBack1" prefHeight="48.0" prefWidth="118.0" stylesheets="@../../styles/StyleRoulette.css" text="Back" />
+      <Button fx:id="btnWeiter1" layoutX="767.0" layoutY="538.0" mnemonicParsing="false" onAction="#HandleButtonActionWeiter1" prefHeight="48.0" prefWidth="118.0" stylesheets="@../../styles/StyleRoulette.css" text="Spielen" />
+      <Button fx:id="btnRules" layoutX="34.0" layoutY="441.0" mnemonicParsing="false" onAction="#HandleButtonActionRules" prefHeight="25.0" prefWidth="100.0" stylesheets="@../../styles/StyleRoulette.css" text="Game rules" />
+      <Label fx:id="lblText1" alignment="BOTTOM_LEFT" contentDisplay="CENTER" layoutX="25.0" layoutY="378.0" prefHeight="48.0" prefWidth="680.0" text="For a full Game description click the Button below:" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="434.0" layoutY="547.0" prefHeight="30.0" prefWidth="146.0" text="Your Balance: " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblChips" contentDisplay="CENTER" layoutX="567.0" layoutY="547.0" prefHeight="30.0" prefWidth="191.0" text="1000000000" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

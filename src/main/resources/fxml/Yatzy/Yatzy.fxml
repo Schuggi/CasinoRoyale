@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" fx:id="ApYatzy" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2a4b69;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casinoroyale.controller.YatzyController">
+    <children>
+        <ImageView fitHeight="43.0" fitWidth="23.0" layoutX="781.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Images/user.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="23.0" fitWidth="69.0" layoutX="781.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" rotate="-69.4">
+            <image>
+                <Image url="@../../Images/ChipTop.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="lblActiveUser" layoutX="813.0" layoutY="17.0" text="User Name" textFill="WHITE" />
+        <Label layoutX="813.0" layoutY="48.0" text="Chips:" textFill="WHITE" />
+        <Label fx:id="lblChips" layoutX="851.0" layoutY="48.0" text="225" textFill="WHITE" />
+        <AnchorPane layoutY="79.0" prefHeight="4.0" prefWidth="900.0" style="-fx-background-color: #FFFFFF;" />
+        <ImageView fitHeight="68.0" fitWidth="189.0" layoutX="361.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Images/Yatzy.png" />
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="diceZero" layoutX="500.0" layoutY="250.0" onMouseClicked="#clickDice0" pickOnBounds="true" preserveRatio="true" />
+      
+        <ImageView fx:id="clickedDiceZero" layoutX="500.0" layoutY="250.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clicked.png" />
+         </image></ImageView>
+        <ImageView fx:id="diceTwo" layoutX="620.0" layoutY="320.0" onMouseClicked="#clickDice2" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="clickedDiceTwo" layoutX="620.0" layoutY="320.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clicked.png" />
+         </image></ImageView>
+        <ImageView fx:id="diceOne" layoutX="740.0" layoutY="250.0" onMouseClicked="#clickDice1" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="clickedDiceOne" layoutX="740.0" layoutY="250.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clicked.png" />
+         </image></ImageView>
+        <ImageView fx:id="diceThree" layoutX="500.0" layoutY="390.0" onMouseClicked="#clickDice3" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="clickedDiceThree" layoutX="500.0" layoutY="390.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clicked.png" />
+         </image></ImageView>
+        <ImageView fx:id="diceFour" layoutX="740.0" layoutY="390.0" onMouseClicked="#clickDice4" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="clickedDiceFour" layoutX="740.0" layoutY="390.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clicked.png" />
+         </image></ImageView>
+        <Button fx:id="rollButton" layoutX="621.0" layoutY="531.0" mnemonicParsing="false" onAction="#btnroll" prefHeight="25.0" prefWidth="121.0" text="Roll" />
+        <Pane layoutY="139.0" prefHeight="425.0" prefWidth="276.0" style="-fx-background-color: white;" />
+        <Pane layoutX="130.0" layoutY="178.0" prefHeight="352.0" prefWidth="23.0">
+            <children>
+                <VBox layoutY="-1.0" prefHeight="352.0" prefWidth="11.0">
+                    <children>
+                        <Rectangle fx:id="rectangle1Ones" fill="#40733286" height="21.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="25.0" />
+                        <Rectangle fx:id="rectangle1Twos" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle1Threes" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle1Fours" fill="#40733286" height="21.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                        <Rectangle fx:id="rectangle1Fives" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle1Sixes" fill="#40733286" height="17.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="19.0" />
+                        <Rectangle fx:id="rectangle1Sum" fill="#40733286" height="23.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                        <Rectangle fx:id="rectangle1Bonus" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle1Pair" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle1TwoPairs" fill="#40733286" height="24.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="22.0" />
+                        <Rectangle fx:id="rectangle1ThreeOfaKind" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle1FourOfaKind" fill="#40733286" height="22.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="24.0" />
+                        <Rectangle fx:id="rectangle1SmallStraight" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle1LargeStraight" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle1FullHouse" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle1Chance" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle1Yatzy" fill="#40733286" height="23.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="23.0" />
+                        <Rectangle fx:id="rectangle1Total" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+        <Label fx:id="display1Ones" layoutX="137.0" layoutY="178.0" onMouseClicked="#click1Ones" prefHeight="25.0" prefWidth="42.0" text="0" />
+        <Label fx:id="display1Twos" layoutX="137.0" layoutY="195.0" onMouseClicked="#click1Twos" prefHeight="25.0" prefWidth="32.0" text="0" />
+        <Label fx:id="display1Threes" layoutX="137.0" layoutY="212.0" onMouseClicked="#click1Threes" prefHeight="25.0" prefWidth="30.0" text="0" />
+        <Label fx:id="display1Fours" layoutX="137.0" layoutY="230.0" onMouseClicked="#click1Fours" prefHeight="30.0" prefWidth="42.0" text="0" />
+        <Label fx:id="display1Fives" layoutX="137.0" layoutY="250.0" onMouseClicked="#click1Fives" prefHeight="30.0" prefWidth="42.0" text="0" />
+        <Label fx:id="display1Sixes" layoutX="137.0" layoutY="270.0" onMouseClicked="#click1Sixes" prefHeight="30.0" prefWidth="42.0" text="0" />
+        <Label fx:id="display1Sum" layoutX="137.0" layoutY="295.0" prefHeight="21.0" prefWidth="42.0" text="0" textFill="RED" />
+        <Label fx:id="display1Bonus" layoutX="137.0" layoutY="316.0" prefHeight="21.0" prefWidth="42.0" text="0" textFill="RED" />
+        <Label fx:id="display1Pair" layoutX="137.0" layoutY="326.0" onMouseClicked="#click1Pair" prefHeight="37.0" prefWidth="42.0" text="0" />
+        <Label fx:id="display1TwoPairs" layoutX="137.0" layoutY="353.0" onMouseClicked="#click1TwoPairs" prefHeight="21.0" prefWidth="42.0" text="0" />
+        <Label fx:id="display1ThreeOfaKind" layoutX="137.0" layoutY="374.0" onMouseClicked="#click1ThreeOfaKind" prefHeight="21.0" prefWidth="42.0" text="0" />
+        <Label fx:id="display1FourOfaKind" layoutX="137.0" layoutY="393.0" onMouseClicked="#click1FourOfaKind" prefHeight="23.0" prefWidth="42.0" text="0" />
+        <Label fx:id="display1SmallStraight" layoutX="137.0" layoutY="412.0" onMouseClicked="#click1SmallStraight" prefHeight="25.0" prefWidth="42.0" text="0" />
+        <Label fx:id="display1LargeStraight" layoutX="137.0" layoutY="431.0" onMouseClicked="#click1LargeStraight" prefHeight="25.0" prefWidth="42.0" text="0" />
+        <Label fx:id="display1FullHouse" layoutX="137.0" layoutY="447.0" onMouseClicked="#click1FullHouse" prefHeight="30.0" prefWidth="42.0" text="0" />
+        <Label fx:id="display1Chance" layoutX="137.0" layoutY="473.0" onMouseClicked="#click1Chance" prefHeight="15.0" prefWidth="42.0" text="0" />
+        <Label fx:id="display1Yatzy" layoutX="137.0" layoutY="490.0" onMouseClicked="#click1Yatzy" prefHeight="21.0" prefWidth="42.0" text="0" />
+        <Label fx:id="display1Total" layoutX="137.0" layoutY="512.0" prefHeight="21.0" prefWidth="42.0" text="0" textFill="#f80000" />
+        <Pane layoutX="243.0" layoutY="178.0" prefHeight="352.0" prefWidth="23.0">
+            <children>
+                <VBox layoutY="-1.0" prefHeight="352.0" prefWidth="17.0">
+                    <children>
+                        <Rectangle fx:id="rectangle2Ones" fill="#40733286" height="21.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="19.0" />
+                        <Rectangle fx:id="rectangle2Twos" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle2Threes" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle2Fours" fill="#40733286" height="21.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="19.0" />
+                        <Rectangle fx:id="rectangle2Fives" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle2Sixes" fill="#40733286" height="22.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle2Sum" fill="#40733286" height="20.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle2Bonus" fill="#40733286" height="19.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="18.0" />
+                        <Rectangle fx:id="rectangle2Pair" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle2TwoPairs" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle2ThreeOfaKind" fill="#40733286" height="23.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle2FourOfaKind" fill="#40733286" height="20.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="19.0" />
+                        <Rectangle fx:id="rectangle2SmallStraight" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle2LargeStraight" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle2FullHouse" fill="#40733286" height="21.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="17.0" />
+                        <Rectangle fx:id="rectangle2Chance" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle2Yatzy" fill="#40733286" height="21.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="18.0" />
+                        <Rectangle fx:id="rectangle2Total" fill="#40733286" height="18.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="20.0" />
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+        <Label fx:id="display2Ones" layoutX="247.0" layoutY="177.0" onMouseClicked="#click2Ones" prefHeight="23.0" prefWidth="10.0" text="0" />
+        <Label fx:id="display2Twos" layoutX="247.0" layoutY="199.0" onMouseClicked="#click2Twos" prefHeight="18.0" prefWidth="32.0" text="0" />
+        <Label fx:id="display2Threes" layoutX="247.0" layoutY="221.0" onMouseClicked="#click2Threes" prefHeight="13.0" prefWidth="30.0" text="0" />
+        <Label fx:id="display2Fours" layoutX="247.0" layoutY="236.0" onMouseClicked="#click2Fours" prefHeight="23.0" prefWidth="42.0" text="0" />
+        <Label fx:id="display2Fives" layoutX="247.0" layoutY="256.0" onMouseClicked="#click2Fives" prefHeight="18.0" prefWidth="32.0" text="0" />
+        <Label fx:id="display2Sixes" layoutX="247.0" layoutY="276.0" onMouseClicked="#click2Sixes" prefHeight="18.0" prefWidth="32.0" text="0" />
+        <Label fx:id="display2Sum" layoutX="247.0" layoutY="297.0" prefHeight="18.0" prefWidth="32.0" text="0" textFill="RED" />
+        <Label fx:id="display2Bonus" layoutX="247.0" layoutY="317.0" prefHeight="18.0" prefWidth="32.0" text="0" textFill="RED" />
+        <Label fx:id="display2Pair" layoutX="247.0" layoutY="336.0" onMouseClicked="#click2Pair" prefHeight="18.0" prefWidth="32.0" text="0" />
+        <Label fx:id="display2TwoPairs" layoutX="247.0" layoutY="354.0" onMouseClicked="#click2TwoPairs" prefHeight="18.0" prefWidth="32.0" text="0" />
+        <Label fx:id="display2ThreeOfaKind" layoutX="247.0" layoutY="376.0" onMouseClicked="#click2ThreeOfaKind" prefHeight="18.0" prefWidth="32.0" text="0" />
+        <Label fx:id="display2FourOfaKind" layoutX="247.0" layoutY="396.0" onMouseClicked="#click2FourOfaKind" prefHeight="18.0" prefWidth="32.0" text="0" />
+        <Label fx:id="display2SmallStraight" layoutX="247.0" layoutY="416.0" onMouseClicked="#click2SmallStraight" prefHeight="18.0" prefWidth="32.0" text="0" />
+        <Label fx:id="display2LargeStraight" layoutX="247.0" layoutY="435.0" onMouseClicked="#click2LargeStraight" prefHeight="18.0" prefWidth="32.0" text="0" />
+        <Label fx:id="display2FullHouse" layoutX="247.0" layoutY="453.0" onMouseClicked="#click2FullHouse" prefHeight="18.0" prefWidth="32.0" text="0" />
+        <Label fx:id="display2Chance" layoutX="247.0" layoutY="473.0" onMouseClicked="#click2Chance" prefHeight="18.0" prefWidth="32.0" text="0" />
+        <Label fx:id="display2Yatzy" layoutX="247.0" layoutY="492.0" onMouseClicked="#click2Yatzy" prefHeight="18.0" prefWidth="32.0" text="0" />
+        <Label fx:id="display2Total" layoutX="247.0" layoutY="513.0" prefHeight="18.0" prefWidth="32.0" text="0" textFill="RED" />
+        <Label fx:id="displayPlayerOneName" layoutX="128.0" layoutY="159.0" prefHeight="17.0" prefWidth="93.0" />
+        <Label fx:id="displayPlayerTwoName" layoutX="233.0" layoutY="159.0" prefHeight="17.0" prefWidth="93.0" />
+        <JFXDrawer fx:id="JFXMenu" defaultDrawerSize="190.0" prefHeight="600.0" prefWidth="151.0" />
+        <JFXHamburger fx:id="JFXMenuButton" layoutX="30.0" layoutY="29.0" stylesheets="@../../styles/StyleMenu.css" />
+        <Label layoutX="30.0" layoutY="180.0" prefHeight="17.0" prefWidth="77.0" text="Ones" />
+        <Label layoutX="30.0" layoutY="200.0" prefHeight="17.0" prefWidth="85.0" text="Twos" />
+        <Label layoutX="30.0" layoutY="216.0" prefHeight="17.0" prefWidth="77.0" text="Threes" />
+        <Label layoutX="30.0" layoutY="237.0" prefHeight="17.0" prefWidth="77.0" text="Fours" />
+        <Label layoutX="30.0" layoutY="257.0" prefHeight="17.0" prefWidth="59.0" text="Fives" />
+        <Label layoutX="30.0" layoutY="277.0" prefHeight="17.0" prefWidth="70.0" text="Sixes" />
+        <Label layoutX="30.0" layoutY="298.0" prefHeight="17.0" prefWidth="85.0" text="Sum(63)" />
+        <Label layoutX="30.0" layoutY="318.0" prefHeight="17.0" prefWidth="77.0" text="Bonus" />
+        <Label layoutX="30.0" layoutY="337.0" prefHeight="17.0" prefWidth="85.0" text="Pair" />
+        <Label layoutX="30.0" layoutY="355.0" prefHeight="17.0" prefWidth="85.0" text="2 Pairs" />
+        <Label layoutX="30.0" layoutY="377.0" prefHeight="17.0" prefWidth="77.0" text="3 of a Kind" />
+        <Label layoutX="30.0" layoutY="397.0" prefHeight="17.0" prefWidth="85.0" text="4 of a Kind" />
+        <Label layoutX="30.0" layoutY="416.0" prefHeight="17.0" prefWidth="85.0" text="Small Straight" />
+        <Label layoutX="30.0" layoutY="435.0" prefHeight="17.0" prefWidth="85.0" text="Large Straight" />
+        <Label layoutX="30.0" layoutY="454.0" prefHeight="17.0" prefWidth="85.0" text="Full House" />
+        <Label layoutX="30.0" layoutY="474.0" prefHeight="17.0" prefWidth="70.0" text="Chance" />
+        <Label layoutX="30.0" layoutY="493.0" prefHeight="17.0" prefWidth="70.0" text="Yatzy" />
+        <Label layoutX="30.0" layoutY="514.0" prefHeight="17.0" prefWidth="59.0" text="Total" />
+        <Label fx:id="remainingRolls" layoutX="699.0" layoutY="528.0" prefHeight="30.0" prefWidth="32.0" />
+        <Rectangle fx:id="rollsRectangle" fill="#40733286" height="25.0" layoutX="701.0" layoutY="532.0" opacity="0.0" stroke="TRANSPARENT" strokeType="INSIDE" width="32.0" />
+      
+    </children>
+</AnchorPane>

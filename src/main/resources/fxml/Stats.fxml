@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casinoroyale.controller.StatsController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="5.0" layoutY="5.0" prefHeight="495.0" prefWidth="43.0">
+         <children>
+            <ImageView fitHeight="501.0" fitWidth="900.0" layoutX="-5.0" layoutY="-5.0" opacity="0.89" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/chooseback.jpg" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.3" />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="ImageViewBlackJack" fitHeight="137.0" fitWidth="111.0" layoutX="607.0" layoutY="128.0" onMouseClicked="#btnBlackJack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/blackjack-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageViewYatzi" fitHeight="100.0" fitWidth="131.0" layoutX="385.0" layoutY="165.0" onMouseClicked="#btnYatzi" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Dice.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageViewRoulette" fitHeight="125.0" fitWidth="125.0" layoutX="195.0" layoutY="314.0" onMouseClicked="#btnRoulette" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/RouletteRad.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageViewBingo" fitHeight="171.0" fitWidth="141.0" layoutX="399.0" layoutY="291.0" onMouseClicked="#btnBingo" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/bingoKarte.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageViewBaccara" fitHeight="137.0" fitWidth="131.0" layoutX="191.0" layoutY="128.0" onMouseClicked="#btnBaccara" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/karte4_5.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageViewLogout" fitHeight="113.0" fitWidth="119.0" layoutX="591.0" layoutY="320.0" onMouseClicked="#btnBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Logout-icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="226.0" layoutY="265.0" text="Baccara" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="437.0" layoutY="265.0" text="Yatzy" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="632.0" layoutY="265.0" text="Blackjack" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="226.0" layoutY="449.0" prefHeight="27.0" prefWidth="87.0" text="Roulette" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="441.0" layoutY="449.0" text="Bingo" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="642.0" layoutY="449.0" text="Log out" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="409.0" layoutY="11.0" style="-fx-font-weight: bold;" text="Stats" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

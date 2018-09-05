@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casinoroyale.controller.GameSelectionController">
+   <children>
+      <ImageView fitHeight="507.0" fitWidth="900.0" opacity="0.89" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/chooseback.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.3" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="56.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ImageViewBlackJack" fitHeight="137.0" fitWidth="111.0" layoutX="607.0" layoutY="128.0" onMouseClicked="#btnBlackJack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/blackjack-1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="508.0" layoutX="196.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/choooose.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImageViewYatzi" fitHeight="100.0" fitWidth="131.0" layoutX="385.0" layoutY="165.0" onMouseClicked="#btnYatzi" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Dice.svg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImageViewRoulette" fitHeight="125.0" fitWidth="125.0" layoutX="195.0" layoutY="314.0" onMouseClicked="#btnRoulette" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/RouletteRad.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImageViewBingo" fitHeight="171.0" fitWidth="141.0" layoutX="399.0" layoutY="291.0" onMouseClicked="#btnBingo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/bingoKarte.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImageViewBaccara" fitHeight="137.0" fitWidth="131.0" layoutX="191.0" layoutY="128.0" onMouseClicked="#btnBaccara" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/karte4_5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImageViewLogout" fitHeight="113.0" fitWidth="119.0" layoutX="591.0" layoutY="320.0" onMouseClicked="#btnBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Logout-icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="226.0" layoutY="265.0" text="Baccara" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="437.0" layoutY="265.0" text="Yatzy" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="632.0" layoutY="265.0" text="Blackjack" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="226.0" layoutY="449.0" prefHeight="27.0" prefWidth="87.0" text="Roulette" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="441.0" layoutY="449.0" text="Bingo" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="642.0" layoutY="449.0" text="Log out" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnChips" layoutX="760.0" layoutY="462.0" mnemonicParsing="false" onAction="#btnChips" prefHeight="27.0" prefWidth="125.0" stylesheets="@../styles/StyleBaccara.css" text="Buy Chips" textFill="WHITE" />
+      <Label fx:id="lblActiveUser" layoutX="777.0" layoutY="28.0" prefHeight="18.0" prefWidth="108.0" text="User Name" textFill="WHITE" />
+      <Label fx:id="lblChipss" layoutX="814.0" layoutY="60.0" prefHeight="18.0" prefWidth="87.0" text="225" textFill="WHITE" />
+      <Label layoutX="777.0" layoutY="61.0" text="Chips:" textFill="WHITE" />
+      <ImageView fitHeight="43.0" fitWidth="23.0" layoutX="749.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="69.0" layoutX="749.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/ChipTop.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

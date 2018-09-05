@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="840.0" style="-fx-background-color: #2a4d69;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casinoroyale.controller.StatsBaccaraController">
+   <children>
+      <Label layoutX="106.0" layoutY="14.0" style="-fx-font-weight: bold;" text="Stats Baccara" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="478.0" layoutY="113.0" style="-fx-font-weight: bold;" text="Played Games:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="478.0" layoutY="283.0" style="-fx-font-weight: bold;" text="User who bought most chips:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="479.0" layoutY="167.0" style="-fx-font-weight: bold;" text="User with biggest win:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="478.0" layoutY="226.0" style="-fx-font-weight: bold;" text="User with biggest loss:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGames" layoutX="784.0" layoutY="113.0" style="-fx-font-weight: bold;" text="100" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWin" layoutX="784.0" layoutY="167.0" style="-fx-font-weight: bold;" text="100" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLoss" layoutX="784.0" layoutY="226.0" style="-fx-font-weight: bold;" text="100" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblChips" layoutX="784.0" layoutY="283.0" style="-fx-font-weight: bold;" text="100" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="14.0" layoutY="159.0" prefHeight="200.0" prefWidth="393.0">
+        <columns>
+          <TableColumn fx:id="colUser" prefWidth="135.0" text="user" />
+            <TableColumn fx:id="colWin" minWidth="0.0" prefWidth="95.0" text="win" />
+            <TableColumn fx:id="colLoss" minWidth="0.0" prefWidth="86.0" text="loss" />
+            <TableColumn fx:id="colRounds" prefWidth="75.0" text="rounds" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="14.0" layoutY="116.0" onKeyReleased="#search" prefHeight="25.0" prefWidth="393.0" promptText="Search User" />
+   </children>
+</AnchorPane>

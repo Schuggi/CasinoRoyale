@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ApYatzy" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2a4b69;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casinoroyale.controller.TestJoelController">
+   <children>
+      <ImageView fitHeight="43.0" fitWidth="23.0" layoutX="781.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="69.0" layoutX="781.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" rotate="-69.4">
+         <image>
+            <Image url="@../../Images/ChipTop.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblActiveUser" layoutX="813.0" layoutY="17.0" text="User Name" textFill="WHITE" />
+      <Label layoutX="813.0" layoutY="48.0" text="Chips:" textFill="WHITE" />
+      <Label fx:id="lblChips" layoutX="851.0" layoutY="48.0" text="225" textFill="WHITE" />
+      <AnchorPane layoutY="75.0" prefHeight="4.0" prefWidth="900.0" style="-fx-background-color: #FFFFFF;" />
+      <ImageView fitHeight="68.0" fitWidth="189.0" layoutX="361.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Yatzy.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnShowDice" layoutX="650.0" layoutY="509.0" mnemonicParsing="false" onAction="#btnShowDice" prefHeight="68.0" prefWidth="118.0" stylesheets="@../../styles/StyleBaccara.css" text="Roll">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <JFXDrawer fx:id="JFXMenu" defaultDrawerSize="190.0" prefHeight="600.0" prefWidth="151.0" />
+      <JFXHamburger fx:id="JFXMenuButton" layoutX="30.0" layoutY="29.0" stylesheets="@../../styles/StyleMenu.css" />
+      <HBox layoutX="450.0" layoutY="127.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imgView1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgView2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox layoutX="450.0" layoutY="277.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imgView3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgView4" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <ImageView fx:id="imgView5" fitHeight="150.0" fitWidth="200.0" layoutX="450.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnOK1" layoutX="339.0" layoutY="474.0" mnemonicParsing="false" onAction="#btnOK1" prefHeight="27.0" prefWidth="34.0" stylesheets="@../../styles/StyleBaccara.css" text="OK" visible="false" />
+      <VBox layoutX="176.0" layoutY="99.0" prefHeight="150.0" prefWidth="152.0" spacing="10.0">
+         <children>
+            <TextField fx:id="tf1" />
+            <TextField fx:id="tf2" />
+            <TextField fx:id="tf3" />
+            <TextField fx:id="tf4" />
+            <TextField fx:id="tf5" />
+            <TextField fx:id="tf6" />
+         </children>
+      </VBox>
+      <VBox layoutX="76.0" layoutY="99.0" prefHeight="112.0" prefWidth="100.0" spacing="14.0">
+         <children>
+            <Label text="Einer">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Zweier">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Dreier">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Vierer">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Fünfer">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Sechser">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="76.0" layoutY="329.0" prefHeight="22.0" prefWidth="110.0" text="Summe oben">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="209.0" layoutY="329.0" prefHeight="22.0" prefWidth="118.0" text="Test100P">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="352.0" prefHeight="22.0" prefWidth="109.0" text="Bonus">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="352.0" prefHeight="22.0" prefWidth="118.0" text="35">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="374.0" prefHeight="22.0" prefWidth="118.0" text="Betrag oben">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="377.0" prefHeight="22.0" prefWidth="118.0" text="100">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnOK2" layoutX="339.0" layoutY="509.0" mnemonicParsing="false" onAction="#btnOK2" stylesheets="@../../styles/StyleBaccara.css" text="OK" visible="false" />
+      <Button fx:id="btnOK5" layoutX="339.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnOK5" stylesheets="@../../styles/StyleBaccara.css" text="OK" visible="false" />
+      <Button fx:id="btnOK3" layoutX="398.0" layoutY="509.0" mnemonicParsing="false" onAction="#btnOK3" stylesheets="@../../styles/StyleBaccara.css" text="OK" visible="false" />
+      <Button fx:id="btnOK6" layoutX="398.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnOK6" stylesheets="@../../styles/StyleBaccara.css" text="OK" visible="false" />
+      <Button fx:id="btnOK4" layoutX="281.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnOK4" stylesheets="@../../styles/StyleBaccara.css" text="OK" visible="false" />
+      
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casinoroyale.controller.BlackJackStartScreenController">
+   <children>
+      <ImageView fx:id="ImageView" fitHeight="564.0" fitWidth="901.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/WelcomeBlackjack.jpg" />
+         </image>
+      </ImageView>
+    <Button fx:id="btnBlackjack" layoutX="351.0" layoutY="374.0" minWidth="74.0" mnemonicParsing="false" onAction="#startBlackjack" prefHeight="66.0" prefWidth="195.0" text="Start Game" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <stylesheets>
+            <URL value="@../../styles/Style.css" />
+            <URL value="@../../styles/StyleBingo.css" />
+         </stylesheets></Button>
+      <ImageView fx:id="lblBlackjack" fitHeight="287.0" fitWidth="389.0" layoutX="254.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/thumbnail_blackjack.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="263.0" layoutY="149.0" prefHeight="40.0" prefWidth="292.0" text="Your account balance: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblChips" layoutX="537.0" layoutY="153.0" text="300" textFill="#f5f5f5">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="628.0" layoutY="151.0" text="Chips" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblinstruction" layoutX="120.0" layoutY="126.0" prefHeight="262.0" prefWidth="703.0" text="Blackjack is a classic casino game that you can enjoy right here at Casino Royale. &#10;You’ll be taking on the dealer and trying to collect a hand with a value of as close to 21 as possible. &#10;Don’t go over, though, or you’ll ‘bust.’ Sounds easy? It is, and that’s the beauty of blackjack." textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Hyperlink fx:id="lblRules" layoutX="519.0" layoutY="302.0" onAction="#openBrowser" text="Rules" />
+      <Label layoutX="363.0" layoutY="305.0" text="Click here to read the rules:" textFill="#aea8a8" />
+      <Button fx:id="btnBack" layoutX="59.0" layoutY="508.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="40.0" prefWidth="85.0" stylesheets="@../../styles/StyleBingo.css" text="Back" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="330.0" prefWidth="373.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="ch.bbbaden.casinoroyale.controller.Bot3">
+   <children>
+      <AnchorPane prefHeight="350.0" prefWidth="385.0" style="-fx-background-color: #EFDEB0;">
+         <children>
+            <AnchorPane layoutX="5.0" layoutY="6.0" prefHeight="49.0" prefWidth="374.0" style="-fx-background-color: #248A79;">
+               <children>
+                  <Label layoutX="162.0" layoutY="7.0" style="-fx-font-weight: bold;" text="Bot 3" textFill="#efdeb0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="5.0" layoutY="61.0" prefHeight="283.0" prefWidth="374.0" style="-fx-background-color: #248A79;">
+               <children>
+                  <AnchorPane layoutX="6.0" layoutY="14.0" prefHeight="260.0" prefWidth="70.0" style="-fx-background-color: #EFDEB0;">
+                     <children>
+                        <Label fx:id="lblZ1" layoutX="19.0" layoutY="7.0" style="-fx-font-weight: bold;" text="15" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblZ2" layoutX="27.0" layoutY="61.0" style="-fx-font-weight: bold;" text="9" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblZ3" layoutX="28.0" layoutY="117.0" style="-fx-font-weight: bold;" text="2" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="12.0" layoutY="44.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="12.0" layoutY="100.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="12.0" layoutY="155.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="12.0" layoutY="207.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <ImageView fx:id="img11" fitHeight="35.0" fitWidth="38.0" layoutX="20.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img12" fitHeight="35.0" fitWidth="38.0" layoutX="21.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img13" fitHeight="35.0" fitWidth="38.0" layoutX="23.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblZ5" layoutX="28.0" layoutY="224.0" style="-fx-font-weight: bold;" text="6" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="img15" fitHeight="35.0" fitWidth="38.0" layoutX="24.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="79.0" layoutY="14.0" prefHeight="260.0" prefWidth="70.0" style="-fx-background-color: #EFDEB0;">
+                     <children>
+                        <Label fx:id="lblZ6" layoutX="19.0" layoutY="7.0" style="-fx-font-weight: bold;" text="15" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblZ7" layoutX="27.0" layoutY="61.0" style="-fx-font-weight: bold;" text="9" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblZ8" layoutX="28.0" layoutY="117.0" style="-fx-font-weight: bold;" text="2" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="12.0" layoutY="44.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="12.0" layoutY="100.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="12.0" layoutY="155.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="12.0" layoutY="207.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <Label fx:id="lblZ10" layoutX="29.0" layoutY="223.0" style="-fx-font-weight: bold;" text="6" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblZ9" layoutX="22.0" layoutY="171.0" style="-fx-font-weight: bold;" text="12" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="img21" fitHeight="35.0" fitWidth="38.0" layoutX="22.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img22" fitHeight="35.0" fitWidth="38.0" layoutX="23.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img23" fitHeight="35.0" fitWidth="38.0" layoutX="24.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img24" fitHeight="35.0" fitWidth="38.0" layoutX="25.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img25" fitHeight="35.0" fitWidth="38.0" layoutX="25.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="152.0" layoutY="14.0" prefHeight="260.0" prefWidth="70.0" style="-fx-background-color: #EFDEB0;">
+                     <children>
+                        <Label fx:id="lblZ11" layoutX="20.0" layoutY="8.0" style="-fx-font-weight: bold;" text="15" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblZ12" layoutX="28.0" layoutY="62.0" style="-fx-font-weight: bold;" text="9" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="13.0" layoutY="44.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="13.0" layoutY="101.0" prefHeight="66.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="13.0" layoutY="156.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="13.0" layoutY="208.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <Label fx:id="lblZ14" layoutX="30.0" layoutY="224.0" style="-fx-font-weight: bold;" text="6" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblZ13" layoutX="23.0" layoutY="172.0" style="-fx-font-weight: bold;" text="12" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="117.0" style="-fx-font-weight: bold;" text="Free" textFill="WHITE" />
+                        <Label layoutX="23.0" layoutY="133.0" style="-fx-font-weight: bold;" text="Spot" textFill="WHITE" />
+                        <ImageView fx:id="img31" fitHeight="35.0" fitWidth="38.0" layoutX="22.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img32" fitHeight="35.0" fitWidth="38.0" layoutX="24.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img34" fitHeight="35.0" fitWidth="38.0" layoutX="26.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img35" fitHeight="35.0" fitWidth="38.0" layoutX="26.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="225.0" layoutY="14.0" prefHeight="260.0" prefWidth="70.0" style="-fx-background-color: #EFDEB0;">
+                     <children>
+                        <Label fx:id="lblZ15" layoutX="19.0" layoutY="8.0" style="-fx-font-weight: bold;" text="15" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblZ16" layoutX="27.0" layoutY="62.0" style="-fx-font-weight: bold;" text="9" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblZ17" layoutX="28.0" layoutY="118.0" style="-fx-font-weight: bold;" text="2" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="12.0" layoutY="44.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="12.0" layoutY="101.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="12.0" layoutY="156.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="12.0" layoutY="208.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <Label fx:id="lblZ19" layoutX="29.0" layoutY="224.0" style="-fx-font-weight: bold;" text="6" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblZ18" layoutX="22.0" layoutY="172.0" style="-fx-font-weight: bold;" text="12" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="img41" fitHeight="35.0" fitWidth="38.0" layoutX="22.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img42" fitHeight="35.0" fitWidth="38.0" layoutX="23.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img43" fitHeight="35.0" fitWidth="38.0" layoutX="23.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img44" fitHeight="35.0" fitWidth="38.0" layoutX="25.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img45" fitHeight="35.0" fitWidth="38.0" layoutX="25.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="298.0" layoutY="14.0" prefHeight="260.0" prefWidth="70.0" style="-fx-background-color: #EFDEB0;">
+                     <children>
+                        <Label fx:id="lblZ20" layoutX="20.0" layoutY="9.0" style="-fx-font-weight: bold;" text="15" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblZ21" layoutX="28.0" layoutY="63.0" style="-fx-font-weight: bold;" text="9" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblZ22" layoutX="29.0" layoutY="119.0" style="-fx-font-weight: bold;" text="2" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="13.0" layoutY="45.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="13.0" layoutY="102.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="13.0" layoutY="157.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <AnchorPane layoutX="13.0" layoutY="209.0" prefHeight="11.0" prefWidth="47.0" style="-fx-background-color: #248A79;" />
+                        <Label fx:id="lblZ24" layoutX="30.0" layoutY="225.0" style="-fx-font-weight: bold;" text="6" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblZ23" layoutX="23.0" layoutY="173.0" style="-fx-font-weight: bold;" text="12" textFill="#248a79">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="img51" fitHeight="35.0" fitWidth="38.0" layoutX="21.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img52" fitHeight="35.0" fitWidth="38.0" layoutX="22.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img53" fitHeight="35.0" fitWidth="38.0" layoutX="23.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img54" fitHeight="35.0" fitWidth="38.0" layoutX="25.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="img55" fitHeight="35.0" fitWidth="38.0" layoutX="25.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../../Images/BingoCross.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="25.0" layoutY="-1.0" text="1 - 15" textFill="#efdeb0" />
+                  <Label layoutX="98.0" layoutY="-1.0" text="16 - 30" textFill="#efdeb0" />
+                  <Label layoutX="170.0" layoutY="-1.0" text="31 - 45" textFill="#efdeb0" />
+                  <Label layoutX="240.0" layoutY="-1.0" text="46 - 60" textFill="#efdeb0" />
+                  <Label layoutX="314.0" layoutY="-1.0" text="61 - 75" textFill="#efdeb0" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="lblZ4" layoutX="30.0" layoutY="246.0" style="-fx-font-weight: bold;" text="12" textFill="#248a79">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="img14" fitHeight="35.0" fitWidth="38.0" layoutX="34.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../../Images/BingoCross.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

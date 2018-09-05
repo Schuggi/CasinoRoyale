@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2a4d69;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bbbaden.casinoroyale.controller.BingoBuyCardController">
+   <children>
+      <ImageView fitHeight="444.0" fitWidth="281.0" layoutX="280.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Bingo_card.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="75.0" prefHeight="4.0" prefWidth="900.0" style="-fx-background-color: white;" />
+      <Label layoutX="408.0" layoutY="10.0" text="Bingo" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="49.0" fitWidth="48.0" layoutX="569.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/arrowright.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="624.0" layoutY="245.0" text="Regular Card" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="49.0" fitWidth="48.0" layoutX="569.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/arrowright.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="624.0" layoutY="309.0" text="Numbers 1-75" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="49.0" fitWidth="48.0" layoutX="569.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/arrowright.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="624.0" layoutY="373.0" text="Numbers are random" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="49.0" fitWidth="48.0" layoutX="570.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/arrowright.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="625.0" layoutY="435.0" text="Price: 50" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="59.0" layoutX="690.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/CasioRoyaleChip.png" />
+         </image>
+      </ImageView>
+      <Button id="buttonStartGame" fx:id="btnStartGame" layoutX="581.0" layoutY="506.0" mnemonicParsing="false" onAction="#btnStartGame" prefHeight="50.0" prefWidth="126.0" stylesheets="@../../styles/StyleBingo.css" text="Buy Card" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="757.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/user.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblActiveUser" layoutX="792.0" layoutY="13.0" text="User Name" textFill="WHITE" />
+      <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="757.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/ChipTop.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="792.0" layoutY="47.0" text="Chips:" textFill="WHITE" />
+      <Label fx:id="lblChips" layoutX="828.0" layoutY="47.0" text="225" textFill="WHITE" />
+      <Label layoutX="11.0" layoutY="321.0" text="Before the game starts, " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="346.0" text="you have to buy a card!" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button id="buttonStartGame" fx:id="btnBack" layoutX="21.0" layoutY="506.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="50.0" prefWidth="85.0" stylesheets="@../../styles/StyleBingo.css" text="Back" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
